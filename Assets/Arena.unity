@@ -1263,7 +1263,6 @@ GameObject:
   - component: {fileID: 2144901764}
   - component: {fileID: 2144901767}
   - component: {fileID: 2144901766}
-  - component: {fileID: 2144901765}
   - component: {fileID: 2144901768}
   - component: {fileID: 2144901769}
   - component: {fileID: 2144901770}
@@ -1288,21 +1287,6 @@ Transform:
   m_Father: {fileID: 760254168}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2144901765
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6400010, guid: dd47c0df05503b440a0c78c4f59eddf2,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2144901763}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300014, guid: dd47c0df05503b440a0c78c4f59eddf2, type: 3}
 --- !u!23 &2144901766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1390,8 +1374,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8150889, y: 1.5890865, z: 0.068063356}
-  m_Center: {x: -0.00000023841854, y: -0.00000049843015, z: -0.18113558}
+  m_Size: {x: 1.8150889, y: 1.5890865, z: 0.16464955}
+  m_Center: {x: -0.00000026635115, y: -0.0000004926731, z: -0.13284244}
 --- !u!1 &2147216988
 GameObject:
   m_ObjectHideFlags: 0

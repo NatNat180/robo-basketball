@@ -18,7 +18,7 @@ public class ShootBall : MonoBehaviour {
 
 		/* set up shoot animation trigger on button down */
 		bool shoot = Input.GetButtonDown("Shoot");
-		animator.SetBool("scoop flip", shoot);
+		animator.SetBool("shoot", shoot);
 		
 	}
 }

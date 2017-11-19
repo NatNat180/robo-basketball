@@ -10,7 +10,8 @@ public class RoboBehaviour : MonoBehaviour {
 	public float rotationSpeed;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 
 		player = GetComponent<Rigidbody>();
 		playerCollder = GetComponent<Collider>();
@@ -18,13 +19,14 @@ public class RoboBehaviour : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 
 		float rotate = Input.GetAxis("Horizontal");
 		float move = Input.GetAxis("Vertical");
 
-		player.velocity = transform.forward * moveSpeed * move;
-		transform.Rotate(Vector3.up * rotate * rotationSpeed * Time.deltaTime);
+		player.velocity = transform.forward  * moveSpeed * move;
+		transform.Rotate(Vector3.up * rotationSpeed * rotate * Time.deltaTime);
 		
 	}
 }

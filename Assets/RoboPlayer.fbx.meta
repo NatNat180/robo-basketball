@@ -1,70 +1,67 @@
 fileFormatVersion: 2
-guid: dd47c0df05503b440a0c78c4f59eddf2
-timeCreated: 1511113661
+guid: 4ec3c459977335248a3a3d93115af563
+timeCreated: 1511124928
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: Cube_002
-    100006: Cylinder
-    100008: //RootNode
-    100010: Cube_003
-    100012: Armature
-    100014: Armature_001
-    100016: Bone
-    100018: Bone_0
-    100020: Cube_004
-    100022: Cube_005
-    100024: Cube_006
-    400000: Cube
-    400002: Cube_001
-    400004: Cube_002
-    400006: Cylinder
-    400008: //RootNode
-    400010: Cube_003
-    400012: Armature
-    400014: Armature_001
-    400016: Bone
-    400018: Bone_0
-    400020: Cube_004
-    400022: Cube_005
-    400024: Cube_006
+    100000: Armature
+    100002: Armature.001
+    100004: Bone
+    100006: Bone 1
+    100008: Bone_end
+    100010: Bone_end 1
+    100012: Camera
+    100014: Cube
+    100016: Cube.001
+    100018: Cube.002
+    100020: Cube.003
+    100022: Cube.004
+    100024: Cube.005
+    100026: Cube.006
+    100028: Cylinder
+    100030: Lamp
+    100032: //RootNode
+    400000: Armature
+    400002: Armature.001
+    400004: Bone
+    400006: Bone 1
+    400008: Bone_end
+    400010: Bone_end 1
+    400012: Camera
+    400014: Cube
+    400016: Cube.001
+    400018: Cube.002
+    400020: Cube.003
+    400022: Cube.004
+    400024: Cube.005
+    400026: Cube.006
+    400028: Cylinder
+    400030: Lamp
+    400032: //RootNode
+    2000000: Camera
     2300000: Cube
-    2300002: Cube_001
-    2300004: Cube_002
-    2300006: Cylinder
-    2300008: Cube_003
-    2300010: Cube_004
+    2300002: Cylinder
     3300000: Cube
-    3300002: Cube_001
-    3300004: Cube_002
-    3300006: Cylinder
-    3300008: Cube_003
-    3300010: Cube_004
-    4300000: Cylinder
-    4300002: Cube_002
-    4300004: Cube_001
-    4300006: Cube
-    4300008: Cube_003
-    4300010: Cube_006
-    4300012: Cube_005
-    4300014: Cube_004
+    3300002: Cylinder
+    4300000: Cube.006
+    4300002: Cube.005
+    4300004: Cube.004
+    4300006: Cube.003
+    4300008: Cube.002
+    4300010: Cube.001
+    4300012: Cylinder
+    4300014: Cube
     6400000: Cube
-    6400002: Cube_001
-    6400004: Cube_002
-    6400006: Cylinder
-    6400008: Cube_003
-    6400010: Cube_004
-    7400000: Default Take
+    6400002: Cylinder
     9500000: //RootNode
-    13700000: Cube_001
-    13700002: Cube_002
-    13700004: Cube_003
-    13700006: Cube_004
-    13700008: Cube_005
-    13700010: Cube_006
+    10800000: Lamp
+    13700000: Cube.001
+    13700002: Cube.002
+    13700004: Cube.003
+    13700006: Cube.004
+    13700008: Cube.005
+    13700010: Cube.006
   materials:
     importMaterials: 1
     materialName: 0

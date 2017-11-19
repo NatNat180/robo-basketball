@@ -5,12 +5,14 @@ using UnityEngine;
 public class ShootBall : MonoBehaviour {
 
 	Animator animator;
+	public Rigidbody basketball;
+	public float thrust;
 
 	// Use this for initialization
 	void Start () {
 
 		animator = GetComponent<Animator>();
-		
+
 	}
 	
 	// Update is called once per frame
@@ -19,6 +21,9 @@ public class ShootBall : MonoBehaviour {
 		/* set up shoot animation trigger on button down */
 		bool shoot = Input.GetButtonDown("Shoot");
 		animator.SetBool("shoot", shoot);
-		
+		if (shoot) 
+		{
+			basketball.AddForce(Vector3.up * thrust, ForceMode.Impulse);
+		}
 	}
 }

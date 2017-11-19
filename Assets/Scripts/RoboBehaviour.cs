@@ -8,6 +8,7 @@ public class RoboBehaviour : MonoBehaviour {
 	private Collider playerCollder;
 	public float moveSpeed;
 	public float rotationSpeed;
+	Animator animator;
 
 	// Use this for initialization
 	void Start () 
@@ -15,6 +16,7 @@ public class RoboBehaviour : MonoBehaviour {
 
 		player = GetComponent<Rigidbody>();
 		playerCollder = GetComponent<Collider>();
+		animator = GetComponent<Animator>();
 
 	}
 	

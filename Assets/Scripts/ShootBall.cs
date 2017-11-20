@@ -7,6 +7,7 @@ public class ShootBall : MonoBehaviour
 
     Animator animator;
     public Rigidbody basketball;
+	public Rigidbody robot;
     public float thrust;
 
     // Use this for initialization
@@ -22,16 +23,11 @@ public class ShootBall : MonoBehaviour
         bool shoot = Input.GetButtonDown("Shoot");
         animator.SetBool("shoot", shoot);
 
-		/* apply target trajectory of object */
-		Vector3 targetDir = transform.position * -1;
-		float angle = Vector3.Angle(targetDir, transform.forward);
-		Vector3 trajectoryDir = Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right;
-
-		/* apply conditions for ball to be shot */
+		/* apply conditions before shooting ball */
         if (shoot && ScoopDetector.isInScoop)
         {
-            basketball.AddForce(trajectoryDir * thrust, ForceMode.Impulse);
-			ScoopDetector.isInScoop = false;
+			Vector3 targetTrajectory = -(transform.forward / 2) + (transform.up * 3);
+            basketball.AddForce(targetTrajectory * thrust, ForceMode.Impulse);
         }
     }
 

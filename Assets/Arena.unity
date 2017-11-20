@@ -481,7 +481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketball: {fileID: 2012228339}
-  thrust: 22
+  robot: {fileID: 0}
+  thrust: 8
 --- !u!65 &760254171
 BoxCollider:
   m_ObjectHideFlags: 0

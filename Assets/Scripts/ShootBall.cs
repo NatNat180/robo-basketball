@@ -7,7 +7,6 @@ public class ShootBall : MonoBehaviour
 
     Animator animator;
     public Rigidbody basketball;
-	public Rigidbody robot;
     public float thrust;
 
     // Use this for initialization
@@ -28,6 +27,7 @@ public class ShootBall : MonoBehaviour
         {
 			Vector3 targetTrajectory = -(transform.forward / 2) + (transform.up * 3);
             basketball.AddForce(targetTrajectory * thrust, ForceMode.Impulse);
+			ScoopDetector.isInScoop = false;
         }
     }
 

@@ -21,9 +21,16 @@ public class ShootBall : MonoBehaviour
         /* set up shoot animation trigger on button down */
         bool shoot = Input.GetButtonDown("Shoot");
         animator.SetBool("shoot", shoot);
+
+		/* apply target trajectory of object */
+		Vector3 targetDir = transform.position * -1;
+		float angle = Vector3.Angle(targetDir, transform.forward);
+		Vector3 trajectoryDir = Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right;
+
+		/* apply conditions for ball to be shot */
         if (shoot && ScoopDetector.isInScoop)
         {
-            basketball.AddForce(Vector3.up * thrust, ForceMode.Impulse);
+            basketball.AddForce(trajectoryDir * thrust, ForceMode.Impulse);
 			ScoopDetector.isInScoop = false;
         }
     }

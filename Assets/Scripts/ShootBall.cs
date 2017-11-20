@@ -25,7 +25,7 @@ public class ShootBall : MonoBehaviour
 		/* apply conditions before shooting ball */
         if (shoot && ScoopDetector.isInScoop)
         {
-			Vector3 targetTrajectory = -(transform.forward / 1.25f) + (transform.up * 2.8f);
+			Vector3 targetTrajectory = -(transform.forward / 1.5f) + (transform.up * 3);
             basketball.AddForce(targetTrajectory * thrust, ForceMode.Impulse);
 			ScoopDetector.isInScoop = false;
         }

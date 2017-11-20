@@ -2,23 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootBall : MonoBehaviour {
+public class ShootBall : MonoBehaviour
+{
 
-	Animator animator;
+    Animator animator;
+    public Rigidbody basketball;
+    public float thrust;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
-		animator = GetComponent<Animator>();
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update()
+    {
+        /* set up shoot animation trigger on button down */
+        bool shoot = Input.GetButtonDown("Shoot");
+        animator.SetBool("shoot", shoot);
+        if (shoot && ScoopDetector.isInScoop)
+        {
+            basketball.AddForce(Vector3.up * thrust, ForceMode.Impulse);
+			ScoopDetector.isInScoop = false;
+        }
+    }
 
-		/* set up shoot animation trigger on button down */
-		bool shoot = Input.GetButtonDown("Shoot");
-		animator.SetBool("shoot", shoot);
-		
-	}
 }

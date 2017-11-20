@@ -19,7 +19,7 @@ public class ScoopDetector : MonoBehaviour
 		
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == "Scoop")
         {

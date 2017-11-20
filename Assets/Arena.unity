@@ -806,11 +806,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 57054067a54bf534f8699f972fd5e196, type: 2}
     - target: {fileID: 6400000, guid: 34b7c1d7cb4409e41aa4e0270e846daf, type: 3}
       propertyPath: m_Convex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6400004, guid: 34b7c1d7cb4409e41aa4e0270e846daf, type: 3}
       propertyPath: m_Convex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34b7c1d7cb4409e41aa4e0270e846daf, type: 3}
@@ -1140,10 +1140,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6400004, guid: 34b7c1d7cb4409e41aa4e0270e846daf, type: 3}
       propertyPath: m_Convex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6400000, guid: 34b7c1d7cb4409e41aa4e0270e846daf, type: 3}
       propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: 34b7c1d7cb4409e41aa4e0270e846daf, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1220,7 +1224,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2012228333}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b3304516945d10c43aa0bb1a58674e9e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

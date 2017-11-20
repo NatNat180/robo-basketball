@@ -25,6 +25,6 @@ public class ScoopDetector : MonoBehaviour
         {
             isInScoop = true;
         }
-		
+
     }
 }

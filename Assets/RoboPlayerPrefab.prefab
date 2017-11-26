@@ -375,7 +375,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9ede6bc7c0b31b946a4a9b755b4dd200, type: 2}
+  - {fileID: 2100000, guid: 468bf00857ff85a48814e0085b08cdf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -442,7 +442,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!64 &64242090591296660
 MeshCollider:
@@ -494,7 +494,7 @@ MeshCollider:
   m_GameObject: {fileID: 1131267704465178}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 1
   m_InflateMesh: 0
@@ -524,8 +524,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2518642, y: 0.82760334, z: 1.8741732}
-  m_Center: {x: -0.008918582, y: 0.38286877, z: 0.002544582}
+  m_Size: {x: 1.2518642, y: 0.80653405, z: 1.874173}
+  m_Center: {x: -0.008918582, y: 0.39340344, z: 0.002544578}
 --- !u!65 &65699704354686882
 BoxCollider:
   m_ObjectHideFlags: 1

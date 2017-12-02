@@ -404,9 +404,9 @@ HingeJoint:
   m_ConnectedAnchor: {x: -0.000000055333743, y: 0, z: 0.47000018}
   m_UseSpring: 1
   m_Spring:
-    spring: 10000
+    spring: 100000
     damper: 0
-    targetPosition: 0
+    targetPosition: 1
   m_UseMotor: 0
   m_Motor:
     targetVelocity: 0
@@ -415,8 +415,8 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: -50
-    max: 0
-    bounciness: 0.37
+    max: 1
+    bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
   m_BreakForce: Infinity
@@ -1033,6 +1033,22 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1344435608936506, guid: d0f765facaea1fe448e604c3088ce31a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521791358065554, guid: d0f765facaea1fe448e604c3088ce31a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406571364660712, guid: d0f765facaea1fe448e604c3088ce31a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131267704465178, guid: d0f765facaea1fe448e604c3088ce31a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0f765facaea1fe448e604c3088ce31a, type: 2}
   m_IsPrefabParent: 0
@@ -1445,7 +1461,7 @@ GameObject:
   - component: {fileID: 2012228340}
   - component: {fileID: 2012228341}
   - component: {fileID: 2012228334}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Basketball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
